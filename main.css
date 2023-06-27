@@ -1,0 +1,30 @@
+.main{
+    width: 350px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.inputMonitor{
+    display: flex;
+    width: 98%;
+    height: 30px;
+    justify-content:space-between;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+.buttonPosi{
+    display: flex;
+    justify-content:space-between;
+    height: 15%;
+}
+
+.btn{
+    width: 25%;
+}
+
+.btnLarge{
+    width: 50%;
+}

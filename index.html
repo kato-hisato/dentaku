@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="utf-8">
+         <script src="https://code.jquery.com/jquery-3.7.0.js" crossorigin="anonymous"></script>
+         <link rel="stylesheet" href="main.css">
+         <title>電卓</title>
+     </head>
+ 
+     <body>
+        <div class="main">
+          <input id="result" class="inputMonitor"><!--表示画面-->
+         
+         <div class="buttonPosi"><!--7~+ボタン-->
+          <button class="btn" value="7" id="num" onclick="addText(this.value,this.id)">7</button>
+          <button class="btn" value="8" id="num" onclick="addText(this.value,this.id)">8</button>
+          <button class="btn" value="9" id="num" onclick="addText(this.value,this.id)">9</button>
+          <button class="btn" value="+" id="symbol" onclick="addText(this.value,this.id)">+</button>
+         </div>
+         
+         <div class="buttonPosi"><!--4~-ボタン-->
+          <button class="btn" value="4" id="num" onclick="addText(this.value,this.id)">4</button>
+          <button class="btn" value="5" id="num" onclick="addText(this.value,this.id)">5</button>
+          <button class="btn" value="6" id="num" onclick="addText(this.value,this.id)">6</button>
+          <button class="btn" value="-" id="symbol" onclick="addText(this.value,this.id)">-</button>
+         </div>
+         
+         <div class="buttonPosi"><!--1~*ボタン-->
+          <button class="btn" value="1" id="num" onclick="addText(this.value,this.id)">1</button>
+          <button class="btn" value="2" id="num" onclick="addText(this.value,this.id)">2</button>
+          <button class="btn" value="3" id="num" onclick="addText(this.value,this.id)">3</button>
+          <button class="btn" value="*" id="symbol" onclick="addText(this.value,this.id)">*</button>
+         </div>
+         
+         <div class="buttonPosi"><!--0~/ボタン-->
+          <button class="btn" value="0" id="num" onclick="addText(this.value,this.id)">0</button>
+          <button class="btn" value="00" id="num" onclick="addText(this.value,this.id)">00</button>
+          <button class="btn" value="." id="comma" onclick="addText(this.value,this.id)">.</button>
+          <button class="btn" value="/" id="symbol" onclick="addText(this.value,this.id)">/</button>
+         </div>
+         
+         <div class="buttonPosi"><!--AC~=ボタン-->
+          <button class="btnLarge" onclick="reset()">AC</button>
+          <button class="btnLarge" onclick="equal()">=</button>
+         </div>
+         
+         <script src="main.js"></script>
+         
+        </div>
+     </body>
+ </html>
